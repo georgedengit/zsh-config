@@ -1,5 +1,5 @@
 export ZSH=$HOME/.oh-my-zsh
-export ZSH_OTHER=$HOME/Dropbox/config
+export ZSH_OTHER=$HOME/Projects/config
 
 ZSH_THEME="pygmalion"
 
