@@ -37,8 +37,8 @@
 	"font_size": 13,
 	"ignored_packages":
 	[
-		"Vintage",
-		"Markdown"
+		"Markdown",
+		"Vintage"
 	],
 	"indent_guide_options":
 	[
