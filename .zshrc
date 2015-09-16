@@ -16,5 +16,5 @@ alias zshconfig="subl ~/.zshrc"
 alias envconfig="subl $ZSH_OTHER/env.sh"
 alias sourcezsh="source ~/.zshrc"
 
-export NVM_DIR="/home/gdeng/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+# export NVM_DIR="/home/gdeng/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
