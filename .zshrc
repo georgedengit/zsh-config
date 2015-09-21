@@ -22,3 +22,6 @@ source /usr/local/opt/nvm/nvm.sh
 alias zshconfig="subl ~/.zshrc"
 alias envconfig="subl $ZSH_OTHER/env.sh"
 alias sourcezsh="source ~/.zshrc"
+
+# fpath
+fpath=(/usr/local/share/zsh-completions $fpath)
