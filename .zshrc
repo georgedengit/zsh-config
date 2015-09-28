@@ -1,6 +1,7 @@
 # Setup
 export ZSH=$HOME/.oh-my-zsh
 export ZSH_OTHER=$HOME/Projects/config
+export NVM_DIR=~/.nvm
 
 # Theme
 ZSH_THEME="pygmalion"
@@ -16,7 +17,7 @@ fi
 source $ZSH/oh-my-zsh.sh
 source $ZSH_OTHER/env.sh
 source $ZSH_OTHER/npm-completion.sh
-source /usr/local/opt/nvm/nvm.sh
+source $(brew --prefix nvm)/nvm.sh
 
 # Aliases
 alias zshconfig="subl ~/.zshrc"
