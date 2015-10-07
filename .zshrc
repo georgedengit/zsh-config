@@ -7,11 +7,7 @@ export NVM_DIR=~/.nvm
 ZSH_THEME="pygmalion"
 
 # Plugins
-if [[ "$OSTYPE" == "darwin"* ]]; then
-	plugins=(git npm colored-man colorize github vagrant virtualenv pip python brew osx zsh-syntax-highlighting)
-elif [[ "$OSTYPE" == "linux-gnu" ]]; then
-	plugins=(git npm colored-man colorize github vagrant virtualenv pip python zsh-syntax-highlighting)
-fi
+plugins=(git npm colored-man colorize github vagrant virtualenv pip python zsh-syntax-highlighting)
 
 # Sources
 source $ZSH/oh-my-zsh.sh
