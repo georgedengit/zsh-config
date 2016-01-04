@@ -1,6 +1,6 @@
 # Setup
 export ZSH=$HOME/.oh-my-zsh
-export ZSH_OTHER=$HOME/Projects/config
+export ZSH_OTHER=$HOME/src/config
 
 # Theme
 ZSH_THEME="pygmalion"
