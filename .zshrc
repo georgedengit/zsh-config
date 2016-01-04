@@ -2,8 +2,7 @@
 export ZSH=$HOME/.oh-my-zsh
 export ZSH_OTHER=$HOME/src/config
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
-export MAVEN_HOME=/usr/local/apache-maven-3.2.5
-export PATH=$PATH:$MAVEN_HOME/bin
+export MAVEN_HOME=/usr/local/apache-maven-3.3.9
 
 # Theme
 ZSH_THEME="pygmalion"
