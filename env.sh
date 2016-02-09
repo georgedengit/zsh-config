@@ -2,6 +2,7 @@
 
 # PATH
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="./node_modules/.bin:$PATH"
 export PATH="$PATH:$JAVA_HOME/bin"
 export PATH="$PATH:$MAVEN_HOME/bin"
 
