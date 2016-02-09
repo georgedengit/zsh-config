@@ -14,8 +14,8 @@ source $ZSH_OTHER/env.sh
 source $ZSH_OTHER/npm-completion.sh
 
 # Aliases
-alias zshconfig="subl ~/.zshrc"
-alias envconfig="subl $ZSH_OTHER/env.sh"
+alias configzsh="atom ~/.zshrc"
+alias configenv="atom $ZSH_OTHER/env.sh"
 alias sourcezsh="source ~/.zshrc"
 
 # fpath
