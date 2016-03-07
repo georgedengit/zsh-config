@@ -4,6 +4,7 @@ export ZSH_CONFIG=$HOME/src/config
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export MAVEN_HOME=/usr/local/apache-maven-3.3.9
 export MAVEN_OPTS=-Djava.net.preferIPv4Stack=true
+export WORKON_HOME=~/Envs
 
 # Theme
 ZSH_THEME="pygmalion"
@@ -15,6 +16,7 @@ plugins=(git npm colored-man colorize github vagrant virtualenv pip python brew 
 source $ZSH/oh-my-zsh.sh
 source $ZSH_CONFIG/env.sh
 source $ZSH_CONFIG/npm-completion.sh
+source /usr/local/bin/virtualenvwrapper.sh
 
 # Aliases
 alias configzsh="vim $ZSH_CONFIG"
