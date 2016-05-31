@@ -1,12 +1,18 @@
- #!/bin/zsh
+#!/bin/zsh
 
-# PATH
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+# Java
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+export MAVEN_HOME=/usr/local/apache-maven-3.3.9
+export MAVEN_OPTS=-Djava.net.preferIPv4Stack=true
+export PATH="$JAVA_HOME/bin:$MAVEN_HOME/bin:$PATH"
+
+# Node
 export PATH="./node_modules/.bin:$PATH"
 
-# Aliases
-alias ffs='sudo $(fc -ln -1)'
-alias rmhist='rm $HISTFILE'
-
-alias bu='brew update && brew upgrade --all && brew cleanup && brew doctor'
-alias cppcompile='c++ -std=c++11 -stdlib=libc++'
+# Python
+export PYENV_ROOT=/usr/local/var/pyenv
+if which pyenv > /dev/null; then
+    eval "$(pyenv init -)"
+    export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
+    pyenv virtualenvwrapper
+fi
