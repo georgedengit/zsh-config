@@ -1,9 +1,12 @@
- #!/bin/zsh
+#!/bin/zsh
 
-# PATH
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+# Node
 export PATH="./node_modules/.bin:$PATH"
 
-# Aliases
-alias ffs='sudo $(fc -ln -1)'
-alias rmhist='rm $HISTFILE'
+# Python
+export PYENV_ROOT=/usr/local/var/pyenv
+if which pyenv > /dev/null; then
+    eval "$(pyenv init -)"
+    export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
+    pyenv virtualenvwrapper
+fi
