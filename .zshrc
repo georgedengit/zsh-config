@@ -3,10 +3,10 @@ export ZSH=$HOME/.oh-my-zsh
 export ZSH_CONFIG=$HOME/src/config
 
 # Theme
-ZSH_THEME="pygmalion"
+ZSH_THEME="pure"
 
 # Plugins
-plugins=(git npm colored-man colorize github vagrant pip python brew osx zsh-syntax-highlighting)
+plugins=(git npm colored-man colorize docker docker-compose pip python brew osx)
 
 # PATH
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
@@ -17,7 +17,7 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 # Aliases
 alias configzsh="vim $ZSH_CONFIG"
 alias sourcezsh="source ~/.zshrc"
-alias bu='brew update && brew upgrade --all && brew cleanup && brew doctor'
+alias bu='brew update && brew upgrade && brew cleanup && brew doctor'
 alias ffs='sudo $(fc -ln -1)'
 alias rmhist='rm $HISTFILE'
 alias cppcompile='c++ -std=c++11 -stdlib=libc++'
@@ -25,4 +25,3 @@ alias cppcompile='c++ -std=c++11 -stdlib=libc++'
 # Sources
 source $ZSH/oh-my-zsh.sh
 source $ZSH_CONFIG/env.sh
-source $ZSH_CONFIG/npm-completion.sh
