@@ -6,7 +6,7 @@ export ZSH_CONFIG=$HOME/src/zsh-config
 ZSH_THEME=""
 
 # Plugins
-plugins=(brew django docker gem git gradle node npm pip pyenv python rails ruby)
+plugins=(brew django docker gem git gradle node npm yarn pip pyenv python rails ruby)
 
 # PATH
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
