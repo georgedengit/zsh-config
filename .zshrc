@@ -12,4 +12,4 @@ export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # Sources
 source $ZSH/oh-my-zsh.sh
-source ./env.sh
+source ~/src/zsh-config/env.sh
