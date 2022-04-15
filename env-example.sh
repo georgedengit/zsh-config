@@ -22,8 +22,8 @@ if command -v direnv 1>/dev/null 2>&1; then
 fi
 
 # Aliases
-alias brew='env PATH=${PATH//$(pyenv root)\/shims:/} brew'
 alias bu='brew update && brew upgrade && brew cleanup && brew doctor'
 alias configzsh='code $ZSH_CONFIG'
 alias ffs='sudo $(fc -ln -1)'
 alias rmhist='rm $HISTFILE'
+alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
